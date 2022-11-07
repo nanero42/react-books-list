@@ -10,7 +10,7 @@ export default function AuthContextProvider(props) {
     setAuth({...auth, isAuthentificated: !auth.isAuthentificated});
   }
   return(
-    <AuthContext.Provider value={{auth, toggleAuth}}>
+    <AuthContext.Provider value={{...auth, toggleAuth}}>
       {props.children}
     </AuthContext.Provider>
   );

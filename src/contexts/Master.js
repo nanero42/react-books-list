@@ -5,7 +5,7 @@ import AuthContextProvider from './Auth';
 export const MasterContext = createContext();
 
 export default function MasterContextProvider(props) {
-  return <MasterContext.Provider>
+  return <MasterContext.Provider value>
     <ThemeContextProvider>
       <AuthContextProvider>
         {props.children}

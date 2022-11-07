@@ -1,0 +1,12 @@
+.toggle-theme__button {
+  padding: 24px 32px;
+  cursor: pointer;
+  background-color: #FFF;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.toggle-theme__button:hover {
+  background-color: #000;
+  color: #FFF;
+}
