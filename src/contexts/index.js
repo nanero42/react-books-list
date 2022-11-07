@@ -1,1 +1,0 @@
-export { default as ThemeContextProvider, ThemeContext } from './Theme';

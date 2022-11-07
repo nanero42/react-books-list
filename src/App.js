@@ -1,13 +1,13 @@
 import s from './App.module.scss';
 import { BookList, NavBar } from './components';
-import { ThemeContextProvider } from './contexts';
+import ThemeContextProvider from './contexts/Theme';
 
 function App() {
   return (
     <div className={s.app}>
       <ThemeContextProvider>
-        <NavBar />
-        <BookList />
+      <NavBar />
+      <BookList />
       </ThemeContextProvider>
     </div>
   );
