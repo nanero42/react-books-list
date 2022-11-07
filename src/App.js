@@ -1,18 +1,15 @@
 import s from './App.module.scss';
 import { BookList, NavBar, ToggleTheme } from './components';
-import AuthContextProvider from './contexts/Auth';
-import ThemeContextProvider from './contexts/Theme';
+import MasterContextProvider from './contexts/Master';
 
 function App() {
   return (
     <div className={s.app}>
-      <ThemeContextProvider>
-        <AuthContextProvider>
-          <NavBar />
-          <BookList />
-          <ToggleTheme />
-        </AuthContextProvider>
-      </ThemeContextProvider>
+      <MasterContextProvider>
+        <NavBar />
+        <BookList />
+        <ToggleTheme />
+      </MasterContextProvider>
     </div>
   );
 }
