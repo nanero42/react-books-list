@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../contexts";
+import { ThemeContext } from "../../contexts/Theme";
 import s from "./index.module.scss";
 
 export default function BookList() {
