@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/Theme";
-import s from "./index.module.scss";
+import "./index.scss";
 
 export default function NavBar() {
   const {isLightTheme, light, dark} = useContext(ThemeContext);
   const theme = isLightTheme ? light : dark;
   return (
-    <nav className={s.navbar} style={{ background: theme.ui, color: theme.syntax }}>
+    <nav className={["navbar", theme.ui, theme.text].join(' ')}>
       <h1>Context App</h1>
       <ul>
         <li>Home</li>
